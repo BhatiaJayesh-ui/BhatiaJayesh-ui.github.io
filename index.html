@@ -8,26 +8,46 @@
     <style>
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: #f7f9fc;
+            background-color: #f5e6f7;
         }
         .navbar {
             font-weight: 500;
-            background-color: #007bff;
+            background-color: #6a0dad; /* Dark Purple */
         }
         .navbar-nav .nav-link {
             font-size: 1.1rem;
             color: #fff;
         }
         .navbar-nav .nav-link:hover {
-            color: #f8f9fa;
+            color: #e6ccff;
             text-shadow: 0 0 5px rgba(255, 255, 255, 0.8);
         }
         header {
-            background: url("https://github.com/BhatiaJayesh-ui/BhatiaJayesh-ui.github.io/blob/main/png-transparent-logo-tuition-payments-tutor-graphic-design-english-cv-english-text-logo-thumbnail.png") no-repeat center center;
-            background-size: cover;
+            background: url('learning.jpg') no-repeat center center/cover; /* Background image */
             color: white;
             padding: 100px 0;
             text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 612 px; /* Adjust the height as needed */
+            position: relative;
+        }
+        header::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay */
+            z-index: 1;
+        }
+        header .container {
+            position: relative;
+            z-index: 2;
+            text-align: center;
+            color: #fff;
         }
         header h1 {
             font-size: 4rem;
@@ -37,8 +57,11 @@
             font-size: 1.5rem;
         }
         .footer {
-            background-color: #343a40;
+            background-color: #6a0dad;
             color: #fff;
+        }
+        section h2 {
+            color: #6a0dad;
         }
     </style>
 </head>
@@ -79,7 +102,7 @@
     <section id="about" class="py-5">
         <div class="container">
             <h2 class="text-center">About Me</h2>
-            <p class="lead text-center">With years of experience in teaching English, I specialize in guiding students through language, grammar, and vocabulary lessons, tailored for competitive exams and personal growth.</p>
+            <p class="lead text-center">With years of experience in teaching English, I specialize in guiding students through language, grammar, and vocabulary lessons, tailored for competitive exams and personal growth. Coaching available for individuals applying for BPO jobs as well.</p>
         </div>
     </section>
 
@@ -95,13 +118,13 @@
                 </div>
                 <div class="col-md-4 text-center">
                     <img src="Offline Class.png" alt="Offline Classes" class="img-fluid rounded-circle mb-3">
-                    <h4>Offline Classes</h4>
-                    <p>Join our in-person classes for an engaging learning experience.</p>
+                    <h4>Offline Classes (Chembur)</h4>
+                    <p>Join our in-person classes in the Chembur area for an engaging learning experience.</p>
                 </div>
                 <div class="col-md-4 text-center">
                     <img src="Flexible-Jobs-1024x512.png" alt="Flexible Timings" class="img-fluid rounded-circle mb-3">
                     <h4>Flexible Timings</h4>
-                    <p>Schedule classes that fit your routine, with personalized lesson plans.</p>
+                    <p>Schedule classes that fit your routine, with personalized lesson plans. Bulk training and coaching are also available.</p>
                 </div>
             </div>
         </div>
@@ -115,6 +138,9 @@
             <div class="text-center">
                 <p><strong>Name:</strong> Jayesh Bhatia</p>
                 <p><strong>Phone:</strong> 9082934572</p>
+                <p><strong>Additional Phone:</strong> 8180027115</p>
+                <p><strong>Location:</strong> Chembur, Mumbai (for offline classes)</p>
+                <p><strong>WhatsApp:</strong> Send your requirements via WhatsApp for faster communication.</p>
             </div>
         </div>
     </section>
